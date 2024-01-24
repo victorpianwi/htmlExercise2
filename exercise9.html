@@ -12,14 +12,13 @@
     </style>
 </head>
 <body>
-    <h2>HTML Exercise 2 Solution 9 - Experimenting Subscript and Superscript tags</h2>
+    <h2>HTML Exercise 2 Solution 9 - Email Link to Open User's email client</h2>
     <br>
     <h3>Exercise</h3>
-    <p>Experiment with the subscript and superscript tags.</p>
+    <p>Make an email link that opens the user's email client.</p>
     <br>
     <h3>Solution</h3>
-    <p>To use Subscript in HTML you use the sub element ( &lt;sub&gt; &lt;/sub&gt; ) </p>
-    <p>To use Superscript in HTML you use the sup element ( &lt;sup&gt; &lt;/sup&gt; ) </p>
+    <p>To create a email link in HTML you use the anchor element ( &lt;a&gt; &lt;/a&gt; ). It is also referred to as mailto link. In the hyper reference attribute (href="") you first enter mailto and a colon before entering the target email for the link (href="mailto:testmail@gmail.com").</p>
     <pre>
         &lt;!DOCTYPE html&gt;
         &lt;html lang="en"&gt;
@@ -29,14 +28,13 @@
                 &lt;title>HTML Exercise 2 Solution 9 &lt;/title&gt;
             &lt;/head&gt;
             &lt;body&gt;
-                &lt;p&gt;This is a &lt;sub&gt;Subscripted text &lt;/sub&gt;&lt;/p&gt;
-                &lt;p&gt;This is a &lt;sup&gt;Superscripted text &lt;/sup&gt;&lt;/p&gt;
+                &lt;a href="mailto:testmail@gmail.com"&gt;Email Link&lt;/a&gt;
             &lt;/body&gt;
         &lt;/html&gt;
     </pre>
     <h3>Output</h3>
-    <p>This is a <sub>Subscripted</sub> text</p>
-    <p>This is a <sup>Superscripted</sup> text</p>
+    <a href="mailto:testmail@gmail.com">Email Link</a>
+    <br>
     <br>
     <a href="index.html">Back to Exercises</a>
 </body>

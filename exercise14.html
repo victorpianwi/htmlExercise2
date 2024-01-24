@@ -9,22 +9,33 @@
             background-color: #5c92fd;
             color: white !important;
         }
+        .section{
+            height: 1500px;
+        }
+        .mainsection{
+            height: 650px;
+        }
         @media(max-width:576px){
             pre{
                 width: fit-content;
+            }
+            .section{
+                height: 100vh;
+            }
+            .mainsection{
+                height: 80vh;
             }
         }
     </style>
 </head>
 <body>
-    <h2>HTML Exercise 2 Solution 14 - Experimenting Subscript and Superscript tags</h2>
+    <h2 id="top">HTML Exercise 2 Solution 14 - Linking to specific section of the same page</h2>
     <br>
     <h3>Exercise</h3>
-    <p>Experiment with the subscript and superscript tags.</p>
+    <p>Add a link that jumps to a specific section within the same page.</p>
     <br>
     <h3>Solution</h3>
-    <p>To use Subscript in HTML you use the sub element ( &lt;sub&gt; &lt;/sub&gt; ) </p>
-    <p>To use Superscript in HTML you use the sup element ( &lt;sup&gt; &lt;/sup&gt; ) </p>
+    <p>The anchor element ( &lt;a&gt; &lt;/a&gt; ) is used to set up links to sections on the same page. To link to a section on the same page first the section needs to have a unique identification which is an id. After that In the hyper reference attribute (href="") you specify the name of the page and extension is added then # before the name of the id to navigate to that section</p>
     <pre>
         &lt;!DOCTYPE html&gt;
         &lt;html lang="en"&gt;
@@ -34,15 +45,18 @@
                 &lt;title>HTML Exercise 2 Solution 14 &lt;/title&gt;
             &lt;/head&gt;
             &lt;body&gt;
-                &lt;p&gt;This is a &lt;sub&gt;Subscripted text &lt;/sub&gt;&lt;/p&gt;
-                &lt;p&gt;This is a &lt;sup&gt;Superscripted text &lt;/sup&gt;&lt;/p&gt;
+                &lt;a href="#mainsection"&gt;Link to a section within the page&lt;/a&gt;
+                &lt;div&gt;Section&lt;/div&gt;
+                &lt;div id="mainsection"&gt;Main Section&lt;/div&gt;
             &lt;/body&gt;
         &lt;/html&gt;
     </pre>
-    <h3>Output</h3>
-    <p>This is a <sub>Subscripted</sub> text</p>
-    <p>This is a <sup>Superscripted</sup> text</p>
-    <br>
     <a href="index.html">Back to Exercises</a>
+    <h3>Output</h3>
+    <a href="#mainsection">Link to a section within the page</a>
+    <div class="section">Section</div>
+    <div id="mainsection" class="mainsection">Main Section</div>
+    <br>
+    <a href="#top">Back to Top</a>
 </body>
 </html>

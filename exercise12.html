@@ -9,17 +9,21 @@
             background-color: #5c92fd;
             color: white !important;
         }
+        @media(max-width:576px){
+            pre{
+                width: fit-content;
+            }
+        }
     </style>
 </head>
 <body>
-    <h2>HTML Exercise 2 Solution 12 - Experimenting Subscript and Superscript tags</h2>
+    <h2>HTML Exercise 2 Solution 12 - Making an image a clickable link</h2>
     <br>
     <h3>Exercise</h3>
-    <p>Experiment with the subscript and superscript tags.</p>
+    <p>Make an image a clickable link.</p>
     <br>
     <h3>Solution</h3>
-    <p>To use Subscript in HTML you use the sub element ( &lt;sub&gt; &lt;/sub&gt; ) </p>
-    <p>To use Superscript in HTML you use the sup element ( &lt;sup&gt; &lt;/sup&gt; ) </p>
+    <p>To make an image a clickable link you put the image in the anchor element ( &lt;a&gt; &lt;/a&gt; ). The image should be placed within the anchor element as a child.</p>
     <pre>
         &lt;!DOCTYPE html&gt;
         &lt;html lang="en"&gt;
@@ -29,14 +33,15 @@
                 &lt;title>HTML Exercise 2 Solution 12 &lt;/title&gt;
             &lt;/head&gt;
             &lt;body&gt;
-                &lt;p&gt;This is a &lt;sub&gt;Subscripted text &lt;/sub&gt;&lt;/p&gt;
-                &lt;p&gt;This is a &lt;sup&gt;Superscripted text &lt;/sup&gt;&lt;/p&gt;
+                &lt;a href="imageaslink.html"&gt;&lt;img src="htmllogo.png" alt="HTML Logo" width="150" /&gt;&lt;/a&gt;
+                &lt;p&gt;Click the image&lt;/p&gt;
             &lt;/body&gt;
         &lt;/html&gt;
     </pre>
     <h3>Output</h3>
-    <p>This is a <sub>Subscripted</sub> text</p>
-    <p>This is a <sup>Superscripted</sup> text</p>
+    <a href="imageaslink.html"><img src="htmllogo.png" alt="HTML Logo" width="150" /></a>
+    <p>Click the image</p>
+    <br>
     <br>
     <a href="index.html">Back to Exercises</a>
 </body>

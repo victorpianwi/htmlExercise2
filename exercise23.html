@@ -17,14 +17,13 @@
     </style>
 </head>
 <body>
-    <h2>HTML Exercise 2 Solution 23 - Experimenting Subscript and Superscript tags</h2>
+    <h2>HTML Exercise 2 Solution 23 - Adding disabled attribute to a form element</h2>
     <br>
     <h3>Exercise</h3>
-    <p>Experiment with the subscript and superscript tags.</p>
+    <p>Apply the disabled attribute to a form element.</p>
     <br>
     <h3>Solution</h3>
-    <p>To use Subscript in HTML you use the sub element ( &lt;sub&gt; &lt;/sub&gt; ) </p>
-    <p>To use Superscript in HTML you use the sup element ( &lt;sup&gt; &lt;/sup&gt; ) </p>
+    <p>To add the disabled attribute to your form element, you add the disabled attribute (disabled="") to your input element ( &lt;input /&gt;) in the form element ( &lt;form&gt;&lt;/form&gt;). The essence of the disabled attribute is to disable the input element from receiving inputs</p>
     <pre>
         &lt;!DOCTYPE html&gt;
         &lt;html lang="en"&gt;
@@ -34,14 +33,19 @@
                 &lt;title>HTML Exercise 2 Solution 23 &lt;/title&gt;
             &lt;/head&gt;
             &lt;body&gt;
-                &lt;p&gt;This is a &lt;sub&gt;Subscripted text &lt;/sub&gt;&lt;/p&gt;
-                &lt;p&gt;This is a &lt;sup&gt;Superscripted text &lt;/sup&gt;&lt;/p&gt;
+                &lt;form&gt;
+                    &lt;input type="text" disabled&gt;
+                    &lt;input type="text"&gt;
+                &lt;/form&gt;
             &lt;/body&gt;
         &lt;/html&gt;
     </pre>
     <h3>Output</h3>
-    <p>This is a <sub>Subscripted</sub> text</p>
-    <p>This is a <sup>Superscripted</sup> text</p>
+    <form>
+        <input type="text" disabled>
+        <input type="text">
+    </form>
+    <br>
     <br>
     <a href="index.html">Back to Exercises</a>
 </body>
